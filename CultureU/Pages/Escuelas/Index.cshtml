@@ -1,0 +1,80 @@
+@page
+@model CultureU.Pages.Escuelas.IndexModel
+
+@{
+    ViewData["Title"] = "Escuelas";
+}
+<style>
+    h1{
+        padding-left: 1rem;
+    }
+    p{
+        padding-left: 1rem;
+    }
+    .table{
+        margin-left: 1rem;
+        background-color: #BFD9FF;
+        border: solid #BFD9FF;
+        width: 50%;
+    }
+    .table thead{
+        background-color: #0d6efd;
+        border: solid #0d6efd;
+        color: white;
+    }
+</style>
+<h1>Escuelas</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Escuela[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Escuela[0].Budget)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Escuela[0].StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Escuela[0].ConcurrencyToken)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Escuela[0].Profesor)
+            </th>
+            <th>
+                Token
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Escuela) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Budget)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Profesor.FullName)
+            </td>
+            <td>
+                @Utility.GetLastChars(item.ConcurrencyToken)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.EscuelaID">Edit</a> 
+                <a asp-page="./Details" asp-route-id="@item.EscuelaID">Details</a> 
+                <a asp-page="./Delete" asp-route-id="@item.EscuelaID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+CultureU //Intento Final
+
+Modelos a crear 
+
+Alumno
+Materia
+Inscripcion
+Escuela
+Profesor
+Directiva
+
+
+Folders Paginas Nombres
+Alumnos
+Materias
+Inscripciones
+Escuelas
+
+Comando para scaffolding 
+dotnet aspnet-codegenerator razorpage -m Alumno -dc CultureU.Data.SchoolContext -udl -outDir Pages\Alumnos --referenceScriptLibraries -sqlite
+
+dotnet aspnet-codegenerator razorpage -m Materia -dc SchoolContext -udl -outDir Pages\Materias --referenceScriptLibraries
+
+dotnet aspnet-codegenerator razorpage -m Profesor -dc SchoolContext -udl -outDir Pages\Profesores --referenceScriptLibraries
+
+
+Codigito sql por si acaso en json
+// "SchoolContextSQLite": "Data Source=CU.db"
+
+Nuevo Modelo creado en la practica 3
+FechaInscripcionGrupo

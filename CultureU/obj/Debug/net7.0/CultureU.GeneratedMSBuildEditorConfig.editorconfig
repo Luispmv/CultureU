@@ -1,0 +1,125 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CultureU
+build_property.RootNamespace = CultureU
+build_property.ProjectDir = c:\Users\luisp\OneDrive\Escritorio\Universidad\3er semestre\Programacion para el Desarrollo de Aplicaciones Web\3er parcial\PPWEB INTENTO FINAL\CultureU\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\luisp\OneDrive\Escritorio\Universidad\3er semestre\Programacion para el Desarrollo de Aplicaciones Web\3er parcial\PPWEB INTENTO FINAL\CultureU
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Alumnos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Alumnos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Alumnos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Alumnos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Alumnos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWx1bW5vc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Escuelas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXNjdWVsYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Escuelas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXNjdWVsYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Escuelas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXNjdWVsYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Escuelas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXNjdWVsYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Escuelas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXNjdWVsYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Materias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Materias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Materias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Materias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Materias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Profesores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmVzb3Jlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Profesores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmVzb3Jlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Profesores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmVzb3Jlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Profesores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmVzb3Jlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Profesores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmVzb3Jlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/luisp/OneDrive/Escritorio/Universidad/3er semestre/Programacion para el Desarrollo de Aplicaciones Web/3er parcial/PPWEB INTENTO FINAL/CultureU/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-oth5glx152

@@ -1,0 +1,62 @@
+@page
+@model CultureU.Pages.Escuelas.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<style>
+    main{
+        margin-left: 1rem;
+    }
+    .row{
+        width: 90%;
+        background: #0d6efd;
+        padding: 1rem;
+        color: white;
+    }
+    .table{
+        color: white;
+    }
+</style>
+<h1>Details</h1>
+
+<div>
+    <h4>Escuela</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Escuela.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Escuela.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Escuela.Budget)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Escuela.Budget)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Escuela.StartDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Escuela.StartDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Escuela.ConcurrencyToken)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Escuela.ConcurrencyToken)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Escuela.Profesor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Escuela.Profesor.FirstMidName)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Escuela?.EscuelaID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

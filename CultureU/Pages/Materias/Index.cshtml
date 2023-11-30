@@ -1,0 +1,70 @@
+@page
+@model CultureU.Pages.Materias.IndexModel
+
+@{
+    ViewData["Title"] = "Materias";
+}
+
+<style>
+    h1{
+        padding-left: 1rem;
+    }
+    p{
+        padding-left: 1rem;
+    }
+    .table{
+        margin-left: 1rem;
+        width: 50%;
+        background-color: #BFD9FF;
+        border: solid #BFD9FF;
+    }
+    .table thead{
+        background-color: #0d6efd;
+        border: solid #0d6efd;
+        color: white;
+    }
+    . table thead tr th{
+        background-color: #BFD9FF;
+    }
+</style>
+<h1>Materias</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Materia[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Materia[0].Credits)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Materia[0].Escuela)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Materia) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Credits)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Escuela.EscuelaID)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.MateriaID">Edit</a> 
+                <a asp-page="./Details" asp-route-id="@item.MateriaID">Details</a> 
+                <a asp-page="./Delete" asp-route-id="@item.MateriaID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

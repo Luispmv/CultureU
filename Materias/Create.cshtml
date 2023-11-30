@@ -1,0 +1,47 @@
+@page
+@model CultureU.Pages.Materias.CreateModel
+@{
+    ViewData["Title"] = "Create Course";
+}
+<h2>Create</h2>
+<h4>Materia</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Materia.MateriaID" class="control-label"></label>
+                <input asp-for="Materia.MateriaID" class="form-control" />
+                <span asp-validation-for="Materia.MateriaID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Materia.Title" class="control-label"></label>
+                <input asp-for="Materia.Title" class="form-control" />
+                <span asp-validation-for="Materia.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Materia.Credits" class="control-label"></label>
+                <input asp-for="Materia.Credits" class="form-control" />
+                <span asp-validation-for="Materia.Credits" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Materia.Escuela" class="control-label"></label>
+                <select asp-for="Materia.EscuelaID" class="form-control"
+                        asp-items="@Model.DepartmentNameSL">
+                    <option value="">-- Select Department --</option>
+                </select>
+                <span asp-validation-for="Materia.EscuelaID" class="text-danger" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

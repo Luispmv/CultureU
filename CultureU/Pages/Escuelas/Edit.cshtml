@@ -1,0 +1,75 @@
+@page
+@model CultureU.Pages.Escuelas.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<style>
+   main{
+    margin-left: 1rem
+   }
+   .contenedor-formulario{
+    background-color: #0d6efd;
+    color: white;
+    width: 50%;
+   }
+   form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 1rem;
+   }
+   input[type="submit"] {
+    background-color: #003B92;
+   }
+</style>
+<h1>Edit</h1>
+
+<h4>Escuela</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 contenedor-formulario">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Escuela.EscuelaID" />
+            <input type="hidden" asp-for="Escuela.ConcurrencyToken" />
+            <div class="form-group">
+                <label>Version</label>
+                @Utility.GetLastChars(Model.Escuela.ConcurrencyToken)
+            </div>
+            <div class="form-group">
+                <label asp-for="Escuela.Budget" class="control-label"></label>
+                <input asp-for="Escuela.Budget" class="form-control" />
+                <span asp-validation-for="Escuela.Budget" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Escuela.StartDate" class="control-label"></label>
+                <input asp-for="Escuela.StartDate" class="form-control" />
+                <span asp-validation-for="Escuela.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Escuela.ProfesorID" class="control-label"></label>
+                <select asp-for="Escuela.ProfesorID" class="form-control" asp-items="ViewBag.ProfesorID"></select>
+                <span asp-validation-for="Escuela.ProfesorID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Instructor</label>
+                <select asp-for="Escuela.ProfesorID" class="form-control"
+                        asp-items="@Model.InstructorNameSL"></select>
+                <span asp-validation-for="Escuela.ProfesorID" class="text-danger">
+                </span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

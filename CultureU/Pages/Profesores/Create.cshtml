@@ -1,0 +1,98 @@
+@page
+@model CultureU.Pages.Profesores.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+<style>
+   main{
+    margin-left: 1rem;
+    overflow-x: hidden;
+    margin-bottom: 1rem;
+   }
+   .contenedor-formulario{
+    background-color: #0d6efd;
+    color: white;
+    width: 50%;
+   }
+   form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 1rem;
+   }
+   .table{
+    color:white;
+   }
+   input[type="submit"] {
+    background-color: #003B92;
+   }
+</style>
+<h2>Create</h2>
+
+<h4>Profesor</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 contenedor-formulario">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Profesor.LastName" class="control-label"></label>
+                <input asp-for="Profesor.LastName" class="form-control" />
+                <span asp-validation-for="Profesor.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profesor.FirstMidName" class="control-label"></label>
+                <input asp-for="Profesor.FirstMidName" class="form-control" />
+                <span asp-validation-for="Profesor.FirstMidName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profesor.HireDate" class="control-label"></label>
+                <input asp-for="Profesor.HireDate" class="form-control" />
+                <span asp-validation-for="Profesor.HireDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profesor.Directiva.Location" class="control-label"></label>
+                <input asp-for="Profesor.Directiva.Location" class="form-control" />
+                <span asp-validation-for="Profesor.Directiva.Location" class="text-danger" />
+            </div>
+            <div class="form-group">
+                <div class="table">
+                    <table>
+                        <tr>
+                            @{
+                                int cnt = 0;
+
+                                foreach (var course in Model.AssignedCourseDataList)
+                                {
+                                    if (cnt++ % 3 == 0)
+                                    {
+                                        @:</tr><tr>
+                                    }
+                                    @:<td>
+                                        <input type="checkbox"
+                                               name="selectedCourses"
+                                               value="@course.MateriaID"
+                                               @(Html.Raw(course.Assigned ? "checked=\"checked\"" : "")) />
+                                               @course.MateriaID @:  @course.Title
+                                    @:</td>
+                                }
+                                @:</tr>
+                            }
+                    </table>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

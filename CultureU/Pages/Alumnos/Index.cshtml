@@ -1,0 +1,111 @@
+@page
+@model CultureU.Pages.Alumnos.IndexModel
+
+@{
+    ViewData["Title"] = "Alumnos";
+}
+<style>
+   .formu{
+    width: 50%;
+    margin-left: 1rem;
+   }
+   .form-actions{
+    width: 100%;
+   }
+   .table{
+    width: 50%;
+   }
+   .table tbody{
+    background-color: #BFD9FF;
+    border: solid #BFD9FF;
+   }
+   .table thead{
+    background-color:#0d6efd;
+    border: solid #0d6efd;
+   }
+   .table thead tr th{
+    color: white;
+   }
+   .table thead tr a{
+    text-decoration: none;
+    color: white;
+   }
+</style>
+<h1 style="padding-left: 1rem;">Alumnos</h1>
+
+<p>
+    <a asp-page="Create" style="padding-left: 1rem;">Create New</a>
+</p>
+
+<form asp-page="./Index" method="get" class="formu">
+    <div class="form-actions no-color" style="">
+        <p>
+            Find by name:
+            <input type="text" name="SearchString" value="@Model.CurrentFilter" />
+            <input type="submit" value="Search" class="btn btn-primary" /> |
+            <a asp-page="./Index">Back to full List</a>
+        </p>
+    </div>
+</form>
+<table class="table" style="margin-left: 1rem;">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort"
+                   asp-route-currentFilter="@Model.CurrentFilter">
+                    @Html.DisplayNameFor(model => model.Alumnos[0].LastName)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alumnos[0].FirstMidName)
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort"
+                   asp-route-currentFilter="@Model.CurrentFilter">
+                    @Html.DisplayNameFor(model => model.Alumnos[0].InscripcionDate)
+                </a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Alumnos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstMidName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InscripcionDate)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> 
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> 
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@{
+    var prevDisabled = !Model.Alumnos.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Alumnos.HasNextPage ? "disabled" : "";
+}
+
+<a asp-page="./Index"
+   asp-route-sortOrder="@Model.CurrentSort"
+   asp-route-pageIndex="@(Model.Alumnos.PageIndex - 1)"
+   asp-route-currentFilter="@Model.CurrentFilter"
+   class="btn btn-primary @prevDisabled" style="margin-left: 1rem;">
+    Previous
+</a>
+<a asp-page="./Index"
+   asp-route-sortOrder="@Model.CurrentSort"
+   asp-route-pageIndex="@(Model.Alumnos.PageIndex + 1)"
+   asp-route-currentFilter="@Model.CurrentFilter"
+   class="btn btn-primary @nextDisabled">
+    Next
+</a>
+
